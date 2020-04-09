@@ -6,30 +6,66 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="33" height="38" alt="Лого Кэт энерджи">
-        <img class="page-header__image-title" src="#" width="101" height="18" alt="Кэт энерджи">
-      </a>
       <nav class="main-nav">
+        <a href="index.html" class="main-nav__logo">
+          <img class="main-nav__logo-image" src="#" width="191" height="39" alt="Лого Кэт энерджи">
+        </a>
         <button class="main-nav__button-menu" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a href="index.html" class="site-list__link-to-page">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a href="catalog.html" class="site-list__link-to-page">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Подбор программы</a>
+            <a href="#" class="site-list__link-to-page">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <!-- Здесь будет форма для 2.2. -->
+    <main class="page-main">
+      <h1 class="page-main__form-title">Подбор программы</h1>
+      <form action="https://echo.form.html" class="choose-program-form" method="post">
+        <p class="choose-program-form__form-description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <fieldset class="field-group cat-data">
+          <label class="field-group__label">Имя:*<input type="text" class="field-group__input" name="cat-name" value="Барсик" required></label>
+          <label class="field-group__label">Вес (кг):*<input type="number" class="field-group__input" name="cat-weight" value="7" required></label>
+          <label class="field-group__label">Возраст (лет):<input type="number" class="field-group__input" name="cat-age" value="7"></label>
+          <label class="field-group__label"><input type="radio" class="field-group__radio" name="program-type" value="slim" checked>Похудение</label>
+          <label class="field-group__label"><input type="radio" class="field-group__radio" name="program-type" value="pro">Набор массы</label>
+          <label class="field-group__label"><input type="radio" class="field-group__radio" name="program-type" value="need-help">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="field-group owner-contacts">
+          <legend class="field-group__title">Контактные данные (владельца кота)</legend>
+          <label class="field-group__label">E-mail:*<input type="email" class="field-group__input" name="owner-email" value="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+          <label class="field-group__label">Телефон:*<input type="tel" class="field-group__input" name="owner-tel" value="8 (960) 900-60-90" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required></label>
+        </fieldset>
+        <fieldset class="field-group comment">
+          <legend class="field-group__title">Комментарий</legend>
+          <label class="field-group__label"><textarea name="comment" cols="30" rows="10" class="field-group__textarea">Расскажите обо всех повадках кота</textarea></label>
+        </fieldset>
+        <fieldset class="extra-field-group">
+          <legend class="extra-field-group__title">Дополнительно</legend>
+          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="sweetener" checked>Сахарозаменитель</label>
+          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="water">Питьевая вода</label>
+          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="milk">Молоко</label>
+          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="vitamins">Витамины</label>
+        </fieldset>
+        <input type="submit" class="choose-program-form__submit" value="Отправить заявку">
+        <small class="choose-program-form__note">* — Обязательные поля</small>
+      </form>
+      <section class="contacts">
+        <h2 class="contacts__title visually-hidden">Адрес нашего магазаина</h2>
+        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__detailed">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__on-map" src="#" width="320" height="400" alt="Адрес на карте">
+      </section>
     </main>
     <footer class="page-footer">
-      <img class="page-footer__title" src="#" width="101" height="18" alt="Кэт энерджи">
+      <a href="index.html" class="page-footer__logo">
+        <img class="page-footer__logo-image" src="#" width="128" height="24" alt="Кэт энерджи">
+      </a>
       <ul class="page-footer__list social">
         <li class="social__item">
           <a href="#" class="social__link social__link--vk">VK</a>
