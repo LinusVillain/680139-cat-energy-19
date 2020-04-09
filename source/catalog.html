@@ -13,13 +13,13 @@
         <button class="main-nav__button-menu" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a href="index.html" class="site-list__link-to-page">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Каталог продукции</a>
+            <a href="#" class="site-list__link-to-page">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a href="form.html" class="site-list__link-to-page">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -188,19 +188,19 @@
           </table>
           <a href="#" class="card-product__order-link">Заказать</a>
         </article>
-        <article class="card-product">
-          <button class="card-product__button-card" type="button">+</button>
-          <h3 class="card-product__title">Показать еще 100500 товаров</h3>
-          <p class="card-product__text-detail">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="card-product__link-more">Показать все</a>
-        </article>
+        <div class="show-more">
+          <button class="show-more__button-plus" type="button">+</button>
+          <p class="show-more__show-products">Показать еще 100500 товаров</p>
+          <p class="show-more__text-detail">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="show-more__link-more">Показать все</a>
+        </div>
       </section>
       <section class="extra-catalog">
         <h2 class="extra-catalog__title">Дополнительные товары</h2>
         <ul class="extra-catalog__list">
           <li class="extra-card-product">
             <h3 class="extra-card-product__title">
-             <a href="#" class="extra-card-product__link-to-description">Сахарозаменитель</a>
+              <a href="#" class="extra-card-product__text-description-link">Сахарозаменитель</a>
             </h3>
             <table class="extra-card-product__table table-price">
               <tr class="table-price__row">
@@ -208,11 +208,11 @@
                 <td>200 р.</td>
               </tr>
             </table>
-           <a href="#" class="product-catalog__order">Заказать</a>
+           <a href="#" class="extra-card-product__link-order">Заказать</a>
           </li>
           <li class="extra-card-product">
             <h3 class="extra-card-product__title">
-              <a href="#" class="extra-card-product__link-to-description">Питьевая вода</a>
+              <a href="#" class="extra-card-product__text-description-link">Питьевая вода</a>
             </h3>
             <table class="extra-card-product__table table-price">
               <tr class="table-price__row">
@@ -220,11 +220,11 @@
                 <td>50 р.</td>
               </tr>
             </table>
-            <a href="#" class="product-catalog__order">Заказать</a>
+            <a href="#" class="extra-card-product__link-order">Заказать</a>
           </li>
           <li class="extra-card-product">
             <h3 class="extra-card-product__title">
-              <a href="#" class="extra-card-product__link-to-description">Молоко</a>
+              <a href="#" class="extra-card-product__text-description-link">Молоко</a>
             </h3>
             <table class="extra-card-product__table table-price">
               <tr class="table-price__row">
@@ -232,11 +232,11 @@
                 <td>100 р.</td>
               </tr>
             </table>
-            <a href="#" class="product-catalog__order">Заказать</a>
+            <a href="#" class="extra-card-product__link-order">Заказать</a>
           </li>
           <li class="extra-card-product">
             <h3 class="extra-card-product__title">
-              <a href="#" class="extra-card-product__link-to-description">Витамины</a>
+              <a href="#" class="extra-card-product__text-description-link">Витамины</a>
             </h3>
             <table class="extra-card-product__table table-price">
               <tr class="table-price__row">
@@ -244,18 +244,18 @@
                 <td>300 р.</td>
               </tr>
             </table>
-            <a href="#" class="product-catalog__order">Заказать</a>
+            <a href="#" class="extra-card-product__link-order">Заказать</a>
           </li>
         </ul>
       </section>
       <div class="bonus">
         <p class="bonus__condition">Закажите все и получите чехол для кота в подарок!</p>
       </div>
-      <section class="address">
-        <h2 class="address__title visually-hidden">Адрес нашего магазаина</h2>
-        <p class="address__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="address__detailed">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="address__on-map" src="#" width="320" height="400" alt="Адрес на карте">
+      <section class="contacts">
+        <h2 class="contacts__title visually-hidden">Адрес нашего магазаина</h2>
+        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__detailed">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__on-map" src="#" width="320" height="400" alt="Адрес на карте">
       </section>
     </main>
     <footer class="page-footer">
