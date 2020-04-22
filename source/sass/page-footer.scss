@@ -1,0 +1,47 @@
+.page-footer {
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo {
+  &:hover {
+    fill-opacity: 0.8;
+  }
+  &:active {
+    fill-opacity: 0.6;
+  }
+}
+
+.social {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.social__link {
+  fill: #666666;
+  &:hover {
+    fill: #68b738;
+  }
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.copyright {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #444444;
+  line-height: 16px;
+}
+
+.copyright__link {
+  fill: #666666;
+  &:hover {
+    fill: #68b738;
+  }
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}

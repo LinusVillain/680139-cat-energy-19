@@ -1,0 +1,19 @@
+@import "_normalize.scss";
+@import "page-header.scss";
+@import "product-preview.scss";
+@import "programs.scss";
+@import "advantages.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "product-catalog.scss";
+
+@include normalize();
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

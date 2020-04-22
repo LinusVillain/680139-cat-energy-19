@@ -1,0 +1,23 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.contacts__invite {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__detailed {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #444444;
+  line-height: 20px;
+}
