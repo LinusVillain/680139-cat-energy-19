@@ -1,24 +1,13 @@
-.main-nav__logo {
-  &:hover {
-    fill-opacity: 0.8;
-  }
-  &:active {
-    fill-opacity: 0.6;
-  }
-}
-
-
 .site-list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .site-list__item {
-  margin: 0px;
-  padding: 20px;
-  font-family: Oswald, Arial, sans-serif;
-  color: #111111;
+  margin: 0;
+  font-family: $font-oswald;
+  color: $black;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -28,14 +17,20 @@
 }
 
 .site-list__link-to-page {
-  color: #111111;
+  display: block;
+  padding: 20px;
+  color: $black;
+
   &:hover {
     color: rgba(17, 17, 17, 0.6);
   }
+
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
+
   &--active {
-    border-bottom: 2px solid #68b738;
+    text-decoration: underline $light-green;
+    // border-bottom: 2px solid #68b738;
   }
 }

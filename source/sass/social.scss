@@ -1,0 +1,18 @@
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  fill: $grey;
+
+  &:hover {
+    fill: $light-green;
+  }
+
+  &:active {
+    fill: $light-green;
+    opacity: 0.3;
+  }
+}

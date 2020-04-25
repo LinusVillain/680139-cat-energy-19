@@ -1,4 +1,7 @@
-@import "_normalize.scss";
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "variables.scss";
+@import "global.scss";
+@import "visually-hidden.scss";
 @import "page-header.scss";
 @import "product-preview.scss";
 @import "programs.scss";
@@ -6,14 +9,10 @@
 @import "contacts.scss";
 @import "page-footer.scss";
 @import "product-catalog.scss";
-
-@include normalize();
-
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
+@import "social.scss";
+@import "copyright.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "card-product.scss";
+@import "feature-table.scss";
+@import "show-more.scss";

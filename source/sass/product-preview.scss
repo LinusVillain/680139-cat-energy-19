@@ -5,36 +5,38 @@
 }
 
 .product-preview__title {
-  margin: 0px;
-  font-family: Oswald, Arial, sans-serif;
+  margin: 0;
+  font-family: $font-oswald;
   font-size: 36px;
-  color: #ffffff;
+  color: $white;
   line-height: 36px;
   font-weight: 400;
 }
 
 .product-preview__text {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $font-oswald;
   font-size: 14px;
-  color: #ffffff;
+  color: $white;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
 }
 
 .product-preview__btn-program {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $font-oswald;
   font-size: 14px;
-  color: #ffffff;
+  color: $white;
   font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: $light-green;
+
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $dark-green;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $dark-green;
   }
 }
