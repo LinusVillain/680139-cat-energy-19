@@ -1,9 +1,3 @@
-@mixin pseudo {
-  display: inline-block;
-  position: absolute;
-  content: "";
-}
-
 .programs {
   margin: 0;
   padding: 0;
@@ -24,7 +18,9 @@
   text-transform: uppercase;
 
   &::before {
-    @include pseudo;
+    display: inline-block;
+    position: absolute;
+    content: "";
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -34,7 +30,9 @@
 }
 
 .programs__title--slim::after {
-  @include pseudo;
+  display: inline-block;
+  position: absolute;
+  content: "";
   width: 35px;
   height: 49px;
   margin-left: -170px;
@@ -44,7 +42,9 @@
 }
 
 .programs__title--pro::after {
-  @include pseudo;
+  display: inline-block;
+  position: absolute;
+  content: "";
   width: 67px;
   height: 28px;
   margin-left: -215px;
@@ -76,7 +76,9 @@
 }
 
 .programs__catalog-link::after {
-  @include pseudo;
+  display: inline-block;
+  position: absolute;
+  content: "";
   width: 25px;
   height: 12px;
   margin-top: 2px;
