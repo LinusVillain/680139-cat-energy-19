@@ -1,0 +1,27 @@
+.green-square::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  margin-left: -80px;
+  background-color: $light-green;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.green-square--healthy::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.green-square--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.green-square--food-amount::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.green-square--month-later::before {
+  background-image: url("../img/advantage-clock@1x.png");
+}

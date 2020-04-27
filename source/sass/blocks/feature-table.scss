@@ -1,0 +1,15 @@
+.feature-table__row td {
+  font-family: $font-arial;
+  color: $dark-grey;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:first-child {
+    width: 70px;
+  }
+
+  &:nth-child(2) {
+    width: 71px;
+    text-align: right;
+  }
+}

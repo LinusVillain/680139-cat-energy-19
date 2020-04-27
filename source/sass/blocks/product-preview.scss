@@ -1,0 +1,42 @@
+.product-preview {
+  padding-top: 29px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.product-preview__title {
+  margin: 0;
+  font-family: $font-oswald;
+  font-size: 36px;
+  color: $white;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.product-preview__text {
+  font-family: $font-oswald;
+  font-size: 14px;
+  color: $white;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.product-preview__btn-program {
+  font-family: $font-oswald;
+  font-size: 14px;
+  color: $white;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  background-color: $light-green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-green;
+  }
+}

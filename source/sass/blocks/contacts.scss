@@ -1,0 +1,19 @@
+.contacts--grey-back {
+  background-color: $light-grey;
+}
+
+.contacts__invite {
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__detailed {
+  font-family: $font-arial;
+  font-size: 14px;
+  color: $dark-grey;
+  line-height: 20px;
+}
