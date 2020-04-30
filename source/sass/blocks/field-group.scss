@@ -1,0 +1,60 @@
+.field-group {
+  border: none;
+}
+
+.field-group__title {
+  font-family: $font-oswald;
+  color: $black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.field-group__label {
+  font-family: $font-oswald;
+  color: $grey-black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.field-group__input {
+  font-family: $font-oswald;
+  color: $dark-grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+.field-group__textarea {
+  font-family: $font-oswald;
+  color: $dark-grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+}

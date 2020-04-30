@@ -23,20 +23,6 @@
 }
 
 .product-preview__btn-program {
-  font-family: $font-oswald;
   font-size: 14px;
-  color: $white;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
-  background-color: $light-green;
-
-  &:hover {
-    background-color: $dark-green;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: $dark-green;
-  }
+  line-height: 18px;
 }
