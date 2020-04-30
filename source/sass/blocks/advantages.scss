@@ -19,4 +19,32 @@
   font-size: 14px;
   color: $dark-grey;
   line-height: 18px;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-left: -80px;
+    background-color: $light-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--healthy::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--food-amount::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--month-later::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }

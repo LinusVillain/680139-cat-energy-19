@@ -1,0 +1,39 @@
+.button-to-press {
+  font-family: $font-oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.button-to-press--green {
+  font-family: $font-oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $light-green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-green;
+  }
+}
+
+.button-to-press--grey {
+  font-family: $font-oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $dark-grey;
+  background-color: $light-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
+}
