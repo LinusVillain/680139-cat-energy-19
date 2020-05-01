@@ -1,0 +1,25 @@
+.extra-catalog__title {
+  font-family: $font-oswald;
+  color: $black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  border-bottom: 1px solid #ededed;
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 3px;
+    margin-top: 13px;
+    margin-left: 24px;
+    background-color: $light-green;
+  }
+}
+
+.extra-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
