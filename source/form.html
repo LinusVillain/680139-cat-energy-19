@@ -57,10 +57,10 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main page-form">
-      <h1 class="page-form__form-title">Подбор программы</h1>
-      <form action="https://echo.form.html" class="choose-program-form" method="post">
-        <p class="choose-program-form__form-description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <main class="page-main order-page">
+      <h1 class="order-page__form-title">Подбор программы</h1>
+      <form action="https://echo.form.html" class="order-form" method="post">
+        <p class="order-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <fieldset class="field-group cat-data">
           <label class="field-group__label">Имя:*<input type="text" class="field-group__input" name="cat-name" value="Барсик" required></label>
           <label class="field-group__label">Вес (кг):*<input type="number" class="field-group__input" name="cat-weight" value="7" required></label>
@@ -85,8 +85,8 @@
           <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="milk">Молоко</label>
           <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="vitamins">Витамины</label>
         </fieldset>
-        <input type="submit" class="choose-program-form__submit button-to-press--green" value="Отправить заявку">
-        <small class="choose-program-form__note">* — Обязательные поля</small>
+        <input type="submit" class="order-form__submit btn--green" value="Отправить заявку">
+        <small class="order-form__note">* — Обязательные поля</small>
       </form>
       <section class="contacts contacts--grey-back">
         <h2 class="contacts__title visually-hidden">Адрес нашего магазаина</h2>
