@@ -13,8 +13,7 @@
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "normalize-scss": "7.0.1"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
