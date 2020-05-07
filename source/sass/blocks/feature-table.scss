@@ -1,3 +1,7 @@
+.feature-table__row {
+  border-collapse: collapse;
+}
+
 .feature-table__row td {
   font-family: $font-arial;
   color: $dark-grey;
@@ -11,5 +15,19 @@
   &:nth-child(2) {
     width: 71px;
     text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature-table__row td {
+    border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      width: 50%;
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+    }
   }
 }

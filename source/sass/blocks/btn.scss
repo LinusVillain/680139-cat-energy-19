@@ -1,14 +1,18 @@
 .btn {
+  display: block;
   font-family: $font-oswald;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .btn--green {
+  display: block;
   font-family: $font-oswald;
   font-weight: 400;
   text-transform: uppercase;
   color: $white;
+  text-align: center;
   background-color: $light-green;
 
   &:hover {
@@ -22,10 +26,12 @@
 }
 
 .btn--grey {
+  display: block;
   font-family: $font-oswald;
   font-weight: 400;
   text-transform: uppercase;
   color: $dark-grey;
+  text-align: center;
   background-color: $light-grey;
 
   &:hover {
