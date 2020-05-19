@@ -66,37 +66,47 @@
       <h1 class="order-page__form-title">Подбор программы</h1>
       <form action="https://echo.form.html" class="order-form" method="post">
         <p class="order-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="field-group cat-data">
-          <label class="field-group__label">Имя:*<input type="text" class="field-group__input" name="cat-name" value="Барсик" required></label>
-          <label class="field-group__label">Вес (кг):*<input type="number" class="field-group__input" name="cat-weight" value="7" required></label>
-          <label class="field-group__label">Возраст (лет):<input type="number" class="field-group__input" name="cat-age" value="7"></label>
-          <label class="field-group__label"><input type="radio" class="field-group__radio" name="program-type" value="slim" checked>Похудение</label>
-          <label class="field-group__label"><input type="radio" class="field-group__radio" name="program-type" value="pro">Набор массы</label>
-          <label class="field-group__label"><input type="radio" class="field-group__radio" name="program-type" value="need-help">Не знаю (Нужен ваш совет)</label>
+        <fieldset class="field-group field-group--no-legend cat-data">
+          <div class="field-group__container">
+            <label class="field-group__label">Имя:*<input type="text" class="field-group__input" name="cat-name" value="Барсик" required></label>
+            <label class="field-group__label">Вес (кг):*<input type="number" class="field-group__input" name="cat-weight" value="7" required></label>
+            <label class="field-group__label field-group__label--last-input">Возраст (лет):<input type="number" class="field-group__input" name="cat-age" value="7"></label>
+          </div>
+          <div class="field-group__radio-series">
+            <label class="field-group__label field-group__label--radio"><input type="radio" class="field-group__radio" name="program-type" value="slim" checked>Похудение</label>
+            <label class="field-group__label field-group__label--radio"><input type="radio" class="field-group__radio" name="program-type" value="pro">Набор массы</label>
+            <label class="field-group__label field-group__label--radio field-group__label--last-input"><input type="radio" class="field-group__radio" name="program-type" value="need-help">Не знаю (Нужен ваш совет)</label>
+          </div>
         </fieldset>
         <fieldset class="field-group owner-contacts">
-          <legend class="field-group__title">Контактные данные (владельца кота)</legend>
-          <label class="field-group__label">E-mail:*<input type="email" class="field-group__input" name="owner-email" value="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
-          <label class="field-group__label">Телефон:*<input type="tel" class="field-group__input" name="owner-tel" value="8 (960) 900-60-90" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required></label>
+          <legend class="field-group__title field-group__title--width">Контактные данные (владельца кота)</legend>
+          <div class="owner-contacts__wrapper">
+            <label class="field-group__label field-group__label--left field-group__label--desktop-bottom">E-mail:*<input type="email" class="field-group__input" name="owner-email" value="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+            <label class="field-group__label field-group__label--last-input">Телефон:*<input type="tel" class="field-group__input" name="owner-tel" value="8 (960) 900-60-90" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required></label>
+          </div>
         </fieldset>
         <fieldset class="field-group comment">
           <legend class="field-group__title">Комментарий</legend>
-          <label class="field-group__label"><textarea name="comment" cols="30" rows="10" class="field-group__textarea">Расскажите обо всех повадках кота</textarea></label>
+          <label class="field-group__label field-group__label--last-input"><textarea name="comment" class="field-group__textarea">Расскажите обо всех повадках кота</textarea></label>
         </fieldset>
         <fieldset class="extra-field-group">
           <legend class="extra-field-group__title">Дополнительно</legend>
-          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="sweetener" checked>Сахарозаменитель</label>
-          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="water">Питьевая вода</label>
-          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="milk">Молоко</label>
-          <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="vitamins">Витамины</label>
+          <div class="extra-field-group__wrapper">
+            <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="sweetener" checked>Сахарозаменитель</label>
+            <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="water">Питьевая вода</label>
+            <label class="extra-field-group__label"><input type="checkbox" class="extra-field-group__checkbox" name="milk">Молоко</label>
+            <label class="extra-field-group__label extra-field-group__label--last-input"><input type="checkbox" class="extra-field-group__checkbox" name="vitamins">Витамины</label>
+          </div>
         </fieldset>
         <input type="submit" class="order-form__submit btn--green" value="Отправить заявку">
         <small class="order-form__note">* — Обязательные поля</small>
       </form>
-      <section class="contacts contacts--grey-back">
-        <h2 class="contacts__title visually-hidden">Адрес нашего магазаина</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__detailed">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contacts">
+        <div class="contacts__wrapper contacts__wrapper--grey-back">
+          <h2 class="contacts__title visually-hidden">Адрес нашего магазаина</h2>
+          <p class="contacts__invite">Приглашаем<br>к сотрудничеству дилеров!</p>
+          <p class="contacts__detailed">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
         <img class="contacts__on-map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Адрес на карте">
       </section>
     </main>
